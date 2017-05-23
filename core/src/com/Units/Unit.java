@@ -32,7 +32,7 @@ public class Unit {
     Vector2 movement = new Vector2();
     Vector2 dir = new Vector2();
     ArrayList<Vector2> path = new ArrayList<Vector2>();
-    float speed = 20f;
+    float speed = 40f;
 
  //unit collision for 2d
     Rectangle rect = new Rectangle();

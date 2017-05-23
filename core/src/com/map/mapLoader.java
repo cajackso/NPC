@@ -24,7 +24,6 @@ public class mapLoader {
     }
 
     public void replaceCurrentMap(String maps){
-
         tiledMap = new TmxMapLoader().load(Gdx.files.internal(maps).path());
         tiledMapRenderer = new OrthogonalTiledMapRenderer(tiledMap);
     }

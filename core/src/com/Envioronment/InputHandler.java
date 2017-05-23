@@ -34,7 +34,6 @@ Vector3 clickedCoords;
             cam.MoveCameraRight();
 
         cam.checkCameraBounds(mapHeight, mapWidth);
-
     }
 
 
@@ -43,16 +42,6 @@ Vector3 clickedCoords;
         if(ctrl.getHasClickedMap()==true){
             Vector3 vec=new Vector3(ctrl.getClickedLocationX(),ctrl.getClickedLocationY(),0);
             controller.addPathwayToActiveAndPlayerUnits(vec.x, Gdx.graphics.getHeight()-vec.y, cam.getCam());
-
-            //cam.getCam().unproject(vec);
-
-
-            //System.out.println(vec.x);
-            //System.out.println(vec.y);
-
-            //check for active or player units and set a pathway
-
-
         }
     }
 
