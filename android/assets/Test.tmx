@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="125" height="100" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="FirstBatch" tilewidth="32" tileheight="32">
+  <image source="hyptosis_tile-art-batch-1.png" width="960" height="960"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="125" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt11EOwUAUQFGxD4l9KBaCZQn7YIGmCYlM0lRjmLbvfJx4n6+5M1SzXCyaN6ts7tMwSZ+01Xw+vumt/zSVbK79NPyiufbjpnU8WsejN6ts1jyWvGc7rzvckvMIdqb8Gdgmu2SfzZrP1yE5JqdsbpvfR7Af5V2Sa/bZtm7v+Oap9o78pvnLpkPtPRmmq+MQtZ+Bemeh9s78t3ntfflvb+3nQfMYvMvFozHufRwl/rNrPl3ax6RdTH331rmYH9/n8fgdj0t7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjjAQ9fxlE=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="125" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt3EmO00AYxfFKskCImS19AWZuwYyUMzDugAOwgD2wYrwCsGK8Q7OD5hbMrJBAvJYoyXLbcZWTiiv1/X/SW7QSR+l6KScux3Eu3KORc4+VJ8rTUcSGPf0eNSd2W/T3WuP3RnmrvBtwLNteC31eG5jtg8bxo7KhfGJMTfiunn8oP5VfgZ1fnDh3aZL2eSGdPWPn9ir7lP3jsG1uq+87E7pfVUfV8zHluHKio/MH2g88rOwLfPdYLWfV8znlvHKho/OX6vsV7/kAWnAshiZ0bkvsepwV72ckVyl6tNJ5td/ryg3lpsuz775r6TGPX6q2OX1Xuafcb7k9J3Qep2leT5VnynPlxf+/p7X75ITO4zTN62lLqvfpUl9PS4nO4/jOm+Z1PdX7dPHracvoPqSf2GPzkjv3QuZ5NaGWsZYa2vmiH3PVhczzPp3X/VH+zvVMtwpZb6PzrUJ6XkTnBzSWa6M03VfNu95acufrLr7veTr3fPe5Kr3zW5X/b1md5670zn3v2wKzveDx8ErvvGmdbb0jpSu5802zzqus2vmWRSm98zpr/Tax1vmmZXad+jssfb4vY7HzvkK/n5Sq59DHn3U7fecr1WuIzvOV8r0AeaJze+jcHjq3h87toXN7UnTD9U320DcAACjdZ33e+aJ8Vb7x2ceEHWPndiq7lN2Bvwe1CH3O1w55frckQ3ROH8Maap5jOCk757cA85Syc34LME8H1fMh5bByhH27CSfV8ynltHKGzk24rJ6vKFeVa3SOmtTXHiM/uV97jDT8XOc4zA4/1zkOAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQMn+Ac2XJmU=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="125" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt08ENgkAQhtElW4ZewEKUQoBCwNI1zoWEWMDuYd5L/vskX6YUAAAAAAAAgJzGWsoUe9Tel9DKM1q/YrPmaSzReo1t1c9nsUffI/aufj6j68+Tw/XnAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIC2PrFv7yNo4mx9G0q5D72voYWztT/P5//Px1rKFHvUfjfR1jNav2Kz5mks0XqNbZqnsUfrI/bWHNL4AV/EEiU=
+  </data>
+ </layer>
+</map>

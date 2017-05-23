@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="48" tilewidth="32" tileheight="32" nextobjectid="22">
+ <tileset firstgid="1" name="test" tilewidth="32" tileheight="32">
+  <image source="cobbleset-64_0.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="64" height="48">
+  <data encoding="base64" compression="zlib">
+   eJzt2ElPk0EYwPGCgCZwEUVN5CKboja4sQgkyuZ2YVMWL3pTQcUb+3JjEZWboKDeVFDgBvgFBL8Awqfh/5L00rSl03l4O287h1+ayUzmmad588zi9/l8fmvfXdzDfTzQmKcEVwzIx5GCVBxBGtKREWZsOzrQiccaMW/htgG5O44jGydwEjk4FWbsMzzHC3RpxGxEkwG5O84hD/koQCGKwoztRR/6MaAR8wmeGpC74yqu4TpuoBRlwjG68RKv8Bo9eGNA7o4a1KIO9WjAHeEYgxjCMEYwijEDcnc0owWteIhHaNOcM7BHBH6D+yXzV6nfbhnHBCYxhbeYxju8xwfMCMVSqd9u+YhZzOETPmMeC/iCr/gmFEulfrvlO37gJxaxhF/4jWWsYFUolhv1W9Ua1rGBPyHakrHcqN+q/mITW/gXoi0Z6zDqt65t/McOdkO047k2y7Isy7KiI/Xu51VS735eJfXuZ6pMZEXol3r3OwxHcUxzjrPINSCXWJzGGQPWoeKg703FeVwwICcVkt9bOSoMyMlSkwxnimJcxCVcDupLhjPFTVSiCtVBfYl+pjiIyWcKy7L0Rar/Xhbt+TVS/TdhfY5Y7k+m35dU1ufF+5MkL96fJNn7kyUlUfe7aMVjv7P/eXzOGFZy2ANStkRv
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="1" x="99" y="46" width="117" height="106"/>
+  <object id="2" x="416" y="236" width="120" height="207"/>
+  <object id="3" x="538" y="255" width="134" height="134"/>
+  <object id="4" x="554" y="392" width="109" height="56"/>
+  <object id="6" x="681" y="32" width="52" height="320"/>
+  <object id="7" x="545" y="169" width="134" height="46"/>
+  <object id="8" x="678" y="841" width="53" height="51"/>
+  <object id="9" x="711" y="935" width="109" height="113"/>
+  <object id="10" x="485" y="964" width="115" height="55"/>
+  <object id="11" x="486" y="1157" width="113" height="52"/>
+  <object id="12" x="358" y="1380" width="113" height="51"/>
+  <object id="13" x="160" y="1189" width="66" height="56"/>
+  <object id="14" x="38" y="685" width="113" height="108"/>
+  <object id="15" x="1444" y="1189" width="58" height="56"/>
+  <object id="16" x="1284" y="769" width="56" height="118"/>
+  <object id="17" x="1280" y="225" width="194" height="190"/>
+  <object id="18" x="1289" y="1411" width="108" height="56"/>
+  <object id="19" x="1792" y="30" width="191" height="199"/>
+  <object id="20" x="1828" y="737" width="57" height="59"/>
+  <object id="21" x="1798" y="1194" width="56" height="108"/>
+ </objectgroup>
+</map>
