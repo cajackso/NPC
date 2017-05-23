@@ -2,6 +2,9 @@ package com.Envioronment;
 
 import com.Camera.gamecamera;
 import com.Controls.Controls;
+import com.Units.UnitControlHandler;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 
 /**
@@ -36,15 +39,22 @@ Vector3 clickedCoords;
 
 
     //vec when clicked contains real world coords
-    public void getClickedRealWorldPosition(gamecamera cam, Controls ctrl){
+    public void getClickedRealWorldPosition(gamecamera cam, Controls ctrl, UnitControlHandler controller){
         if(ctrl.getHasClickedMap()==true){
             Vector3 vec=new Vector3(ctrl.getClickedLocationX(),ctrl.getClickedLocationY(),0);
-            cam.getCam().unproject(vec);
+            controller.addPathwayToActiveAndPlayerUnits(vec.x, Gdx.graphics.getHeight()-vec.y, cam.getCam());
+
+            //cam.getCam().unproject(vec);
+
+
+            //System.out.println(vec.x);
+            //System.out.println(vec.y);
+
+            //check for active or player units and set a pathway
+
+
         }
     }
-
-
-
 
 }
 

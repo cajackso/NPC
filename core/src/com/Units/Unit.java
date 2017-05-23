@@ -8,29 +8,45 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
-import com.badlogic.gdx.scenes.scene2d.Actor;
+
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 /**
  * Created by Carl on 25/03/2017.
  */
 
-public class Unit extends Actor{
+public class Unit {
+
+ //Unit image for 2d
     TextureRegion img;
     Sprite sprite = new Sprite();
-    Vector3 unProjectedPosition = new Vector3();
 
+ //Unit position
+    Vector3 unProjectedPosition = new Vector3();
+    Vector2 unProjectedPositionV2 = new Vector2();
+
+ //unit movement for 2d
     Vector2 velocity = new Vector2();
     Vector2 movement = new Vector2();
     Vector2 dir = new Vector2();
     ArrayList<Vector2> path = new ArrayList<Vector2>();
     float speed = 20f;
 
+ //unit collision for 2d
     Rectangle rect = new Rectangle();
     boolean hasOffset;
     float rectXoffset;
     float rectYoffset;
+
+ //player can control
+   boolean canMove;
+   boolean isActive;
+   boolean isAlwaysActive;
+
+    //Generate GUID
+    UUID guid =  UUID.randomUUID();
 
     /****************************
      * Default contstructor containing sprite and
@@ -97,64 +113,92 @@ public class Unit extends Actor{
 
     //add vector to path real world coordinate
     public void addToPath(Vector2 vector, Camera cam){
+        System.out.println(this.path.size());
         Vector3 temp = new Vector3();
-        temp.x=this.unProjectedPosition.x;
-        temp.y=this.unProjectedPosition.y;
+        temp.x=vector.x;
+        temp.y=vector.y;
         cam.project(temp);
         Vector2 result= new Vector2(temp.x, temp.y);
         path.add(result);
     }
 
-
-
-
-    /*
-
      public void MoveVectorThisCycle(float deltaTime, SpriteBatch batch, Camera cam){
         this.draw(deltaTime, batch, cam);
     }
 
-
-
     //True if object position is equal to the position of the first listed path vector
    private boolean  hasReachedPathVector(){
-        if (this.position.x == this.path.get(0).x && this.position.y == this.path.get(0).y){
+        if (this.unProjectedPosition.x == this.path.get(0).x && this.unProjectedPosition.y == this.path.get(0).y){
             return true;
         }
         return false;
     }
 
-
-    private void legacyFunction(){
+    public void processQueuedMovement (float deltaTime){
         if (this.path.isEmpty()) {
             return;
         }
 
-        // position.set(sprite.getX(), sprite.getY());
+        //syncronize vector 2
+        unProjectedPositionV2.set(this.unProjectedPosition.x, this.unProjectedPosition.y);
 
-        dir.set(path.get(0)).sub(position).nor();
+        dir.set(path.get(0)).sub(unProjectedPositionV2).nor();
+
         velocity.set(dir).scl(speed);
         movement.set(velocity).scl(deltaTime);
 
-        if (position.dst2(path.get(0)) > movement.len2()) {
-            position.add(movement);
+        if (unProjectedPositionV2.dst2(path.get(0)) > movement.len2()) {
+            unProjectedPositionV2.add(movement);
         } else {
-            position.set(path.get(0));
+            unProjectedPositionV2.set(path.get(0));
         }
 
-        sprite.setX(position.x);
-        sprite.setY(position.y);
+        sprite.setX(unProjectedPositionV2.x);
+        sprite.setY(unProjectedPositionV2.y);
+
+
+        unProjectedPosition.x=unProjectedPositionV2.x;
+        unProjectedPosition.y=unProjectedPositionV2.y;
 
         if (this.hasReachedPathVector()) {
             removePathVector();
         }
-
     }
 
     private void removePathVector(){
         this.path.remove(0);
     }
-    */
 
+    public boolean getCanMove() {
+        return canMove;
+    }
+
+    public void setCanMove(boolean canMove) {
+        this.canMove = canMove;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public boolean isAlwaysActive() {
+        return isAlwaysActive;
+    }
+
+    public void setAlwaysActive(boolean alwaysActive) {
+        isAlwaysActive = alwaysActive;
+    }
+
+    public UUID getGuid() {
+        return guid;
+    }
+
+    public void setGuid(UUID guid) {
+        this.guid = guid;
+    }
 
 }
