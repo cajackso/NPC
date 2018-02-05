@@ -49,7 +49,6 @@ public class Controls implements InputProcessor {
     public int getClickedLocationX() {
         return clickedLocationX;
     }
-
     public int getClickedLocationY() {
         return clickedLocationY;
     }
